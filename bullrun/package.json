@@ -1,0 +1,16 @@
+{
+  "name": "bullrun",
+  "version": "1.0.0",
+  "description": "BullRun: a fictional stock market simulation game for learning how markets work.",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --no-warnings server/index.js",
+    "dev": "node --no-warnings --watch server/index.js",
+    "test": "node --no-warnings --test tests/backend.test.js tests/broadcast.test.js tests/ai-providers.test.js tests/emotion.test.js tests/stories.test.js",
+    "e2e": "node tests/e2e.js && node tests/e2e-multi.js"
+  }
+}
